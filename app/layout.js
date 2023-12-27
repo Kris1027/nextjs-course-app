@@ -1,4 +1,5 @@
-import './globals.css'
+import Header from '@/components/header';
+import './globals.css';
 
 export const metadata = {
   title: 'NextJS Course App',
@@ -7,8 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
